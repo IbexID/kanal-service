@@ -1,14 +1,28 @@
-import React from 'react';
+import React from "react";
 
-const Header = () => {
-    return (
-        <header className='header'>
-            <img src={require('../images/logo.png')} alt="logo" />
-            <button className='header__exit-button'>
-                <img src={require('../images/exit-button.svg').default} alt="exit" />
-            </button>
-        </header>
-    );
+const Header = ({ isAuth, logOut, username }) => {
+  return (
+    <header className="header">
+      <div className="header__logo"></div>
+      {isAuth && (
+        <div className="header__controls">
+            <p className="header__username">{username}</p>
+          <button
+            className="header__exit-button"
+            onClick={(e) => {
+              e.preventDefault();
+              logOut();
+            }}
+          >
+            <img
+              src={require("../images/exit-button.svg").default}
+              alt="exit"
+            />
+          </button>
+        </div>
+      )}
+    </header>
+  );
 };
 
 export default Header;
