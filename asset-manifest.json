@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kanal-service/static/css/main.5e6771b7.css",
+    "main.js": "/kanal-service/static/js/main.920ce24d.js",
+    "static/media/exit-button.svg": "/kanal-service/static/media/exit-button.ce2a8bce48551a0b6a4ce0e328925192.svg",
+    "index.html": "/kanal-service/index.html",
+    "main.5e6771b7.css.map": "/kanal-service/static/css/main.5e6771b7.css.map",
+    "main.920ce24d.js.map": "/kanal-service/static/js/main.920ce24d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e6771b7.css",
+    "static/js/main.920ce24d.js"
+  ]
+}
